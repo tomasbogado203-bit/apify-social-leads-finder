@@ -1,4 +1,4 @@
-{
+﻿{
     "actorSpecification": 1,
     "name": "social-influencer-leads-finder",
     "title": "Instagram & TikTok Influencer & Creator Email Finder",
@@ -10,6 +10,7 @@
     "dockerfile": "../Dockerfile",
     "readme": "../README.md",
     "input": "./input_schema.json",
+    "output": "./output_schema.json",
     "storages": {
         "dataset": {
             "actorSpecification": 1,

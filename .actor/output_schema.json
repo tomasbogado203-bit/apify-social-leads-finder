@@ -1,0 +1,12 @@
+﻿{
+    "actorOutputSchemaVersion": 1,
+    "title": "Social Influencer Leads Output",
+    "properties": {
+        "results": {
+            "title": "Creator Leads Dataset",
+            "type": "string",
+            "description": "Verified social media influencers and creators with emails and profile links.",
+            "template": "{{links.apiDefaultDatasetUrl}}/items"
+        }
+    }
+}
