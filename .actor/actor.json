@@ -1,0 +1,54 @@
+{
+    "actorSpecification": 1,
+    "name": "social-influencer-leads-finder",
+    "title": "Instagram & TikTok Influencer & Creator Email Finder",
+    "description": "Find verified social media influencers, creators, and brands with contact emails, follower stats, niche categories, and bio links. Perfect for influencer marketing outreach.",
+    "version": "1.0.0",
+    "meta": {
+        "templateId": "python-start"
+    },
+    "dockerfile": "../Dockerfile",
+    "readme": "../README.md",
+    "input": "./input_schema.json",
+    "storages": {
+        "dataset": {
+            "actorSpecification": 1,
+            "title": "Influencer & Creator Leads",
+            "description": "List of social media creators with contact emails and bio info.",
+            "views": {
+                "overview": {
+                    "title": "Overview",
+                    "transformation": {
+                        "fields": [
+                            "platform",
+                            "handle",
+                            "name",
+                            "email",
+                            "niche",
+                            "followersApprox",
+                            "profileUrl",
+                            "bioSnippet"
+                        ]
+                    },
+                    "display": {
+                        "component": "table",
+                        "columns": {
+                            "platform": { "label": "Platform" },
+                            "handle": { "label": "Username" },
+                            "name": { "label": "Name" },
+                            "email": { "label": "Email" },
+                            "niche": { "label": "Niche" },
+                            "followersApprox": { "label": "Followers" },
+                            "profileUrl": { "label": "Profile URL" }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "categories": [
+        "LEAD_GENERATION",
+        "SOCIAL_MEDIA",
+        "MARKETING"
+    ]
+}

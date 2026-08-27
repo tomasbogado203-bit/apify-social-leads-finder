@@ -1,0 +1,41 @@
+{
+    "title": "Social Influencer Leads Finder Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "keywords": {
+            "title": "Niche Keywords / Topics",
+            "type": "array",
+            "description": "Topics or niches to find influencers for (e.g. 'Fitness coach Miami', 'Tech review creator', 'Fashion influencer Madrid', 'Crypto trader').",
+            "editor": "stringList",
+            "prefill": ["Fitness coach Miami", "Beauty makeup creator Los Angeles"]
+        },
+        "platforms": {
+            "title": "Social Platforms",
+            "type": "array",
+            "description": "Target platforms to search.",
+            "editor": "select",
+            "items": {
+                "type": "string",
+                "enum": ["instagram", "tiktok", "youtube", "twitter"],
+                "enumTitles": ["Instagram", "TikTok", "YouTube", "X (Twitter)"]
+            },
+            "default": ["instagram", "tiktok"]
+        },
+        "maxResults": {
+            "title": "Max Leads per Keyword",
+            "type": "integer",
+            "description": "Maximum number of creator leads to extract per keyword.",
+            "minimum": 1,
+            "maximum": 5000,
+            "default": 30
+        },
+        "requireEmail": {
+            "title": "Require Public Email",
+            "type": "boolean",
+            "description": "Only return creators with a public contact email detected in their bio.",
+            "default": false
+        }
+    },
+    "required": ["keywords"]
+}
