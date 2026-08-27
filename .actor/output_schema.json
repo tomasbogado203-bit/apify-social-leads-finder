@@ -1,12 +1,14 @@
-﻿{
+{
     "actorOutputSchemaVersion": 1,
-    "title": "Social Influencer Leads Output",
+    "title": "Actor Results Dataset Output",
+    "description": "Structured dataset containing the extracted records, leads, or data items.",
+    "type": "object",
     "properties": {
-        "results": {
-            "title": "Creator Leads Dataset",
+        "resultsDataset": {
             "type": "string",
-            "description": "Verified social media influencers and creators with emails and profile links.",
-            "template": "{{links.apiDefaultDatasetUrl}}/items"
+            "title": "Results Dataset",
+            "description": "Direct access to the dataset containing the scraped results.",
+            "editor": "dataset"
         }
     }
 }

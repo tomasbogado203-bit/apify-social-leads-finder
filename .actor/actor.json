@@ -1,4 +1,4 @@
-﻿{
+{
     "actorSpecification": 1,
     "name": "social-influencer-leads-finder",
     "title": "Instagram & TikTok Influencer & Creator Email Finder",
@@ -34,13 +34,27 @@
                     "display": {
                         "component": "table",
                         "columns": {
-                            "platform": { "label": "Platform" },
-                            "handle": { "label": "Username" },
-                            "name": { "label": "Name" },
-                            "email": { "label": "Email" },
-                            "niche": { "label": "Niche" },
-                            "followersApprox": { "label": "Followers" },
-                            "profileUrl": { "label": "Profile URL" }
+                            "platform": {
+                                "label": "Platform"
+                            },
+                            "handle": {
+                                "label": "Username"
+                            },
+                            "name": {
+                                "label": "Name"
+                            },
+                            "email": {
+                                "label": "Email"
+                            },
+                            "niche": {
+                                "label": "Niche"
+                            },
+                            "followersApprox": {
+                                "label": "Followers"
+                            },
+                            "profileUrl": {
+                                "label": "Profile URL"
+                            }
                         }
                     }
                 }
